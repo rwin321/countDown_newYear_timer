@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Light", sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    background: url('./clock_bg.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+
+.container > h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.clock__container {
+    display: flex;
+    color: white;
+}
+.clock__container > span {
+    line-height: 1rem;
+    font-size: 1rem;
+}
+.clock__container > div {
+    margin: 0 2rem;
+}
+
+.big-text {
+    line-height: 1rem;
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+@media (max-width: 740px) {
+    .container > h1{
+        font-size: 2rem;
+    }
+    .clock__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .big-text {
+        font-size: 2rem;
+    }
+}
